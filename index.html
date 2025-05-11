@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi ojitos de miel</title>
+  <style>
+    body {
+      background: #fff8dc;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    .girasol {
+      width: 150px;
+      height: 150px;
+      background: url('https://i.imgur.com/OQGShPa.png') no-repeat center;
+      background-size: contain;
+      animation: girar 6s infinite linear;
+      margin-bottom: 20px;
+    }
+
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .mensaje {
+      font-size: 1.5em;
+      color: #ff9900;
+      max-width: 500px;
+      animation: latido 2s infinite;
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="#">
+    <div class="girasol"></div>
+    <div class="mensaje">
+      Eres la mejor novia del mundo,<br>
+      gracias por todas las cosas,<br>
+      estoy muy feliz de tenerte a mi lado.<br>
+      Te amo, mi ojitos de miel.
+    </div>
+  </a>
+</body>
+</html>
